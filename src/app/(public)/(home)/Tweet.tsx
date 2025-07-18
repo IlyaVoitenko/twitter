@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ITweet } from "../shared/types";
+import { ITweet } from "../../shared/types";
 
 export const metadata: Metadata = {
   title: {
