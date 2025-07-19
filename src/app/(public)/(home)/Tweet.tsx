@@ -1,5 +1,7 @@
 import { Metadata } from "next";
-import { ITweet } from "../../shared/types";
+import { ITweet } from "../../../shared/interfaces.types";
+import Link from "next/link";
+import { PAGES } from "../../../config/pages.config";
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +18,9 @@ const Tweet = ({ tweet }: TweetProps) => {
   return (
     <div>
       <span>
-        By: {tweet.userName} : {tweet.userId}
+        <Link href={PAGES.PROFILE(tweet.userName)}>
+          By: {tweet.userName} : {tweet.userId}
+        </Link>
       </span>
       <br />
       <span>{tweet.message}</span>

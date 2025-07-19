@@ -4,3 +4,7 @@ export interface ITweet {
   userName: string;
   userId: string;
 }
+export type NavItemType = {
+  path: string;
+  label: string;
+};
