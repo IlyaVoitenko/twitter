@@ -1,16 +1,24 @@
-"use client";
-import { useParams } from "next/navigation";
+import Profile from "@/components/Profile";
+import { Metadata } from "next";
 
 type ProfileParams = {
-  profile: string;
+  params: { profile: string };
 };
-const Profile = () => {
-  const { profile } = useParams<ProfileParams>();
+export const generateMetadata = async ({
+  params,
+}: ProfileParams): Promise<Metadata> => {
+  const { profile } = params;
+  return {
+    title: `@${profile}`,
+  };
+};
+
+const ProfilePage = () => {
   return (
     <main>
-      <p>Profile: {profile}</p>
+      <Profile />
     </main>
   );
 };
 
-export default Profile;
+export default ProfilePage;
