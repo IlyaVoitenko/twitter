@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { ITweet } from "../../../shared/interfaces.types";
 import Link from "next/link";
 import { PAGES } from "../../../config/pages.config";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: {
@@ -17,10 +18,9 @@ interface TweetProps {
 const Tweet = ({ tweet }: TweetProps) => {
   return (
     <div>
+      <Image src={"/xlogo.svg"} alt="Logo" width={50} height={50} />
       <span>
-        <Link href={PAGES.PROFILE(tweet.userName)}>
-          By: {tweet.userName} : {tweet.userId}
-        </Link>
+        <Link href={PAGES.PROFILE(tweet.userName)}>@{tweet.userName}</Link>
       </span>
       <br />
       <span>{tweet.message}</span>

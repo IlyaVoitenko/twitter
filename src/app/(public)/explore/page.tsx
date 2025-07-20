@@ -1,4 +1,5 @@
 import Explore from "@/components/Explore";
+import { Suspense } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +8,11 @@ export const metadata: Metadata = {
 };
 
 const ExplorePage = () => {
-  return <Explore />;
+  return (
+    <Suspense>
+      <Explore />
+    </Suspense>
+  );
 };
 
 export default ExplorePage;
