@@ -1,0 +1,14 @@
+@use "../../styles/abstracts/colors" as *;
+.active {
+  color: $linkActiveColor;
+}
+.inactive {
+  color: $linkInactiveColor;
+}
+
+.link {
+  text-decoration: none;
+  &:hover {
+    color: $linkActiveColor;
+  }
+}

@@ -7,7 +7,6 @@ type ProfileParams = {
 
 const Profile = () => {
   const { profile } = useParams<ProfileParams>();
-  console.log("profile:", profile);
   return (
     <div>
       <p>Profile: {profile}</p>
