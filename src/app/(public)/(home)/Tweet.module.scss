@@ -1,0 +1,42 @@
+@use "../../../styles/abstracts/colors" as *;
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    min-height: 92px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .nameAndAccount {
+      display: flex;
+      gap: 5px;
+
+      .linkNameUser {
+        display: flex;
+        align-items: center;
+        color: $linkInactiveColor;
+        text-decoration: none;
+        gap: 5px;
+        &:hover {
+          color: $linkActiveColor;
+        }
+      }
+      .linkTweeterAccountName {
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+          color: rgba(113, 118, 123, 0.505);
+        }
+      }
+      .dateAdded {
+        color: $grey;
+      }
+    }
+  }
+}

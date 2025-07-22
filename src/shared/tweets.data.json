@@ -3,62 +3,132 @@
     {
       "tweetId": "1",
       "message": "Чудовий день для нових можливостей! #мотивація",
-      "userName": "ivan_smith",
-      "userId": "user12345"
+      "userName": "Ivan Smith",
+      "tweetAccountName": "ivansmith",
+      "userId": "user12345",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "2",
       "message": "Просто насолоджуюся моментом. Що у вас нового?",
-      "userName": "petra_ivanova",
-      "userId": "user67890"
+      "userName": "Petra Ivanova",
+      "tweetAccountName": "petraivanova",
+      "userId": "user67890",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "3",
       "message": "Вивчаю щось нове кожного дня. Освіта - це сила!",
-      "userName": "olena_kovalenko",
-      "userId": "user11223"
+      "userName": "Olena Kovalenko",
+      "tweetAccountName": "olenakovalenko",
+      "userId": "user11223",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "4",
       "message": "Кава і хороша книга - ідеальне поєднання.",
-      "userName": "Dmitro_Shevchenko",
-      "userId": "user44556"
+      "userName": "Dmitro Shevchenko",
+      "tweetAccountName": "dmitroshevchenko",
+      "userId": "user44556",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "5",
       "message": "Дякую за підтримку! Ви найкращі!",
-      "userName": "Iryna_Sidorova",
-      "userId": "user77889"
+      "userName": "Iryna Sidorova",
+      "tweetAccountName": "irynasidorova",
+      "userId": "user77889",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "6",
       "message": "Розмірковую про майбутнє. Які ваші плани?",
-      "userName": "andrya_petrenko",
-      "userId": "user99001"
+      "userName": "Andrya Petrenko",
+      "tweetAccountName": "andryapetrenko",
+      "userId": "user99001",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "7",
       "message": "Спорт - це життя! Завжди знаходьте час для активності.",
-      "userName": "natalia_mykhailenko",
-      "userId": "user22334"
+      "userName": "Natalia Mykhailenko",
+      "tweetAccountName": "nataliamykhailenko",
+      "userId": "user22334",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "8",
       "message": "Смачна вечеря після довгого дня. Що у вас на столі?",
-      "userName": "sergei_ivanov",
-      "userId": "user55667"
+      "userName": "Sergei Ivanov",
+      "tweetAccountName": "sergeiivanov",
+      "userId": "user55667",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "9",
       "message": "Нові ідеї народжуються щодня. Не бійтеся експериментувати!",
-      "userName": "victor_sokolov",
-      "userId": "user88990"
+      "userName": "Victor Sokolov",
+      "tweetAccountName": "victorsokolov",
+      "userId": "user88990",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     },
     {
       "tweetId": "10",
       "message": "Мандрувати - це відкривати світ і себе. Куди далі?",
-      "userName": "oleksandra_kravchenko",
-      "userId": "user33445"
+      "userName": "Oleksandra Kravchenko",
+      "tweetAccountName": "oleksandrakravchenko",
+      "userId": "user33445",
+      "dateAdded": "2025-07-22T12:00:00Z",
+      "likes": 0,
+      "reposts": 0,
+      "comments": 0,
+      "statistics": 0,
+      "isSaved": false
     }
   ]
 }
