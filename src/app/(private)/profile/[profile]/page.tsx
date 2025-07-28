@@ -1,24 +1,22 @@
-import Profile from "@/components/Profile";
-import { Metadata } from "next";
-
-type ProfileParams = {
-  params: { profile: string };
-};
-export const generateMetadata = async ({
+import { getServerSession } from "next-auth";
+import { authOptions } from "../../../api/auth/[...nextauth]/route";
+export async function generateMetadata({
   params,
-}: ProfileParams): Promise<Metadata> => {
-  const { profile } = params;
+}: {
+  params: { profile: string };
+}) {
   return {
-    title: `@${profile}`,
+    title: `@${params.profile}`,
+    description: `This is @${params.profile}'s profile.`,
   };
-};
+}
+export default async function ProfilePage() {
+  const session = await getServerSession(authOptions);
 
-const ProfilePage = () => {
   return (
-    <main>
-      <Profile />
-    </main>
+    <div>
+      <p>Name: {session?.user?.name}</p>
+      <p>Email: {session?.user?.email}</p>
+    </div>
   );
-};
-
-export default ProfilePage;
+}

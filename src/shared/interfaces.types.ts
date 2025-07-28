@@ -15,3 +15,9 @@ export type NavItemType = {
   path: string;
   label: string;
 };
+export type ProfileParams = {
+  params: { profile: string };
+};
+export interface ProfileType {
+  profile: string;
+}

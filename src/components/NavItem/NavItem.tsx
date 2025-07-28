@@ -10,7 +10,6 @@ interface NavItemProps {
 
 const NavItem = ({ menuItem, isActive }: NavItemProps) => {
   const { path, label } = menuItem;
-
   return (
     <Link
       href={path}
