@@ -14,6 +14,7 @@ export interface ITweet {
 export type NavItemType = {
   path: string;
   label: string;
+  icon?: string;
 };
 export type ProfileParams = {
   params: { profile: string };

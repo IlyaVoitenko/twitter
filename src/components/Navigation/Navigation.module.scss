@@ -1,0 +1,78 @@
+@use "../../styles/abstracts/colors" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 275px;
+  border-right-color: $borderColor;
+  border-right-style: solid;
+  border-right-width: 1px;
+  .containerContent {
+    position: fixed;
+    width: 260px;
+  }
+  .nav {
+    width: 85%;
+    margin-left: 6%;
+  }
+  .logo {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .navList {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      color: $iconsColor;
+      &:hover {
+        color: $linkActiveColor;
+      }
+    }
+  }
+  .button {
+    display: flex;
+    width: 90%;
+    height: 52px;
+    border: solid;
+    border-radius: 42px;
+    justify-content: center;
+    align-items: center;
+    background-color: $backgroundColorPostBtn;
+    margin-top: 7%;
+    .buttonText {
+      display: flex;
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+  .btnPost {
+    background-color: $backgroundColorPostBtn;
+  }
+  .btnAccountInfo {
+    background-color: #0a0a0a;
+    justify-content: space-evenly;
+    .accountInfoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2;
+      .emailText {
+        color: $linkInactiveColor;
+        font-weight: 700;
+      }
+      .usernameText {
+        color: $grey;
+        font-weight: 700;
+      }
+    }
+    .points {
+      color: $linkInactiveColor;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,6 +1,4 @@
-"use server";
 import { months } from "./constants";
-import { useSession } from "next-auth/react";
 
 export const getMonthName = (index: number) => {
   return months[index];

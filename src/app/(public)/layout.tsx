@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import { PropsWithChildren } from "react";
+import Content from "@/components/Content";
 
 const layout = ({ children }: PropsWithChildren) => {
   return (
     <div>
-      <Header />
-      {children}
+      <Content>{children}</Content>
     </div>
   );
 };

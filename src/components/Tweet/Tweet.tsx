@@ -1,11 +1,11 @@
 import { Metadata } from "next";
-import { ITweet } from "../../../shared/interfaces.types";
+import { ITweet } from "../../shared/interfaces.types";
 import Link from "next/link";
-import { PAGES } from "../../../config/pages.config";
+import { PAGES } from "../../config/pages.config";
 import Image from "next/image";
 import styles from "./Tweet.module.scss";
-import { formatDate } from "../../../helper";
-import verifiedIcon from "../../../assets/verified.svg"; // Assuming you have a verified icon in your public folder
+import { formatDate } from "../../helper";
+import verifiedIcon from "../../assets/verified.svg"; // Assuming you have a verified icon in your public folder
 
 export const metadata: Metadata = {
   title: {

@@ -1,6 +1,5 @@
-import Tweet from "./Tweet";
+import Tweet from "../../../components/Tweet";
 import { tweets } from "../../../shared/tweets.data.json";
-import { useSession } from "next-auth/react";
 
 export function TweetsUserPage() {
   return (
