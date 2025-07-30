@@ -1,3 +1,4 @@
+import { DefaultSession } from "next-auth";
 export interface ITweet {
   tweetId: string | number;
   message: string;
@@ -21,4 +22,12 @@ export type ProfileParams = {
 };
 export interface ProfileType {
   profile: string;
+}
+export interface Session extends DefaultSession {
+  user?: {
+    name?: string | null;
+    email?: string | null;
+    image?: string | null;
+    provider?: string;
+  };
 }

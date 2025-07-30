@@ -1,13 +1,8 @@
 import React from "react";
-import SignInBtn from "@/components/SignInBtn";
+import SingIn from "@/components/SingIn";
 
 const Auth = () => {
-  return (
-    <div>
-      <h1>Authentication Page</h1>
-      <SignInBtn />
-    </div>
-  );
+  return <SingIn />;
 };
 
 export default Auth;

@@ -42,11 +42,16 @@
     align-items: center;
     background-color: $backgroundColorPostBtn;
     margin-top: 7%;
+    cursor: pointer;
     .buttonText {
       display: flex;
       font-weight: 700;
       font-size: 15px;
       text-align: center;
+    }
+    .avatarImg {
+      border-radius: 50%;
+      object-fit: cover;
     }
   }
   .btnPost {

@@ -44,8 +44,6 @@ const Navigation = () => {
     },
     { path: PAGES.MORE, label: "More", icon: more },
   ];
-  console.log("session -->", session?.expires);
-  console.log("session -->", session?.user);
 
   return (
     <div className={styles.container}>
@@ -69,7 +67,14 @@ const Navigation = () => {
           <span className={styles.buttonText}>POST</span>
         </button>
         <button className={`${styles.button} ${styles.btnAccountInfo}`}>
-          <Image src="/logo.svg" alt="Logo" width={30} height={30} priority />
+          <Image
+            src={session?.user?.image || "/logo.svg"}
+            className={styles.avatarImg}
+            alt="Logo"
+            width={30}
+            height={30}
+            priority
+          />
           <div className={styles.accountInfoContainer}>
             <span className={styles.emailText}>
               {session?.user?.email || "email"}{" "}

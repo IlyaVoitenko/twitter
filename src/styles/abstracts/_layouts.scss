@@ -1,0 +1,19 @@
+.buttonAuth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  max-width: 400px;
+  min-width: 200px;
+  width: 300px;
+  border-radius: 25px;
+  border: 0px solid;
+  margin-bottom: 16px;
+  cursor: pointer;
+  .textAuth {
+    font-size: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+  }
+}
