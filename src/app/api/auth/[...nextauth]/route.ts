@@ -20,8 +20,6 @@ export const authOptions: NextAuthOptions = {
       if (account) {
         token.provider = account.provider;
       }
-      console.log("account", token, account);
-      console.log("token", token);
       return token;
     },
     async session({ session, token }: { session: Session; token: JWT }) {
