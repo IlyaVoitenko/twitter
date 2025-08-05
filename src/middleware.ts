@@ -1,18 +1,12 @@
-import { getToken } from "next-auth/jwt";
-import { NextResponse, NextRequest } from "next/server";
+import { checkToken } from "./middlewares/checkToken";
+import { NextRequest } from "next/server";
 
-export const middleware = async (req: NextRequest) => {
-  const token = await getToken({
-    req,
-    secret: process.env.NEXTAUTH_SECRET,
-  });
-  if (!token) {
-    const signInUrl = new URL("/auth/signin", req.url);
-    console.log("middleware redirecting to:", signInUrl.toString());
-    return NextResponse.redirect(signInUrl);
-  }
-  return NextResponse.next();
+export const middleware = (req: NextRequest) => {
+  const { pathname } = req.nextUrl;
+  console.log(pathname.startsWith("/profile/:path*"));
+  if (pathname.startsWith("/profile")) return checkToken(req);
 };
+
 export const config = {
   matcher: ["/profile/:path*"],
 };
