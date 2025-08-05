@@ -1,17 +1,6 @@
 import { DefaultSession } from "next-auth";
-export interface ITweet {
-  tweetId: string | number;
-  message: string;
-  userName: string;
-  tweetAccountName: string;
-  userId: string;
-  dateAdded: string;
-  likes: number;
-  reposts: number;
-  comments: number;
-  statistics: number;
-  isSaved: boolean;
-}
+import mongoose from "mongoose";
+
 export type NavItemType = {
   path: string;
   label: string;
@@ -30,4 +19,37 @@ export interface Session extends DefaultSession {
     image?: string | null;
     provider?: string;
   };
+}
+export interface MongooseCache {
+  conn: typeof mongoose | null;
+  promise: Promise<typeof mongoose> | null;
+}
+export interface ITwitterUser extends Document {
+  name: string;
+  email: string;
+  username: string;
+  image?: string;
+  bio?: string;
+  website?: string;
+  createdAt: Date;
+  isVerified: boolean;
+  followers: mongoose.Types.ObjectId[];
+  following: mongoose.Types.ObjectId[];
+  tweets: mongoose.Types.ObjectId[];
+  provider?: string;
+}
+export interface ITweet {
+  content: string;
+  author: mongoose.Types.ObjectId;
+  createdAt: Date;
+  updatedAt: Date;
+  likes: mongoose.Types.ObjectId[];
+  replies: mongoose.Types.ObjectId[];
+  retweetFrom?: mongoose.Types.ObjectId;
+  images?: { url: string; public_id?: string }[];
+  isDeleted: boolean;
+  views: number;
+  isPinned: boolean;
+  hashtags: string[];
+  mentions: mongoose.Types.ObjectId[];
 }
